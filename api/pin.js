@@ -27,7 +27,7 @@ export default async (req, res) => {
     description_lines_count,
   } = req.query;
 
-  res.setHeader("Content-Type", "image/svg+xml");
+  res.setHeader("Content-Type", "image/png"); 
 
   if (blacklist.includes(username)) {
     return res.send(
